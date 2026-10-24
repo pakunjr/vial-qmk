@@ -22,13 +22,14 @@
 #define TAPPING_TOGGLE 2       // Taps needed to toggle a TT(layer) key
 
 // QMK Settings -> Combo
-#define COMBO_TERM 200
+#define COMBO_TERM 80          // Increasing this may make all keys sluggish
 
 // QMK Settings -> One Shot Keys
 #define ONESHOT_TAP_TOGGLE 2   // Taps needed to lock a one-shot key
 #define ONESHOT_TIMEOUT 6000   // One-shot timeout in milliseconds
 
 // QMK Settings -> Mouse keys
+#define MOUSEKEY_OVERLAP_RESET // If another MOUSEKEY overlaps with another, the acceleration will reset
 #define MOUSEKEY_DELAY 0
 #define MOUSEKEY_INTERVAL 10
 #define MOUSEKEY_MOVE_DELTA 1
